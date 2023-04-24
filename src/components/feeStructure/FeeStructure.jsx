@@ -4,7 +4,7 @@ import "./feeStructure.scss"
 import { AiOutlineDelete } from "react-icons/ai"
 import { BsDownload } from "react-icons/bs"
 
-const FeeStructure = ({ feeHeaderHeading }) => {
+const FeeStructure = ( {feeHeaderHeading} ) => {
   const { selectClass } = useContext(myContext)
   const [feesList, setFeesList] = useState([])
   const [inputText, setInputText] = useState('')
@@ -72,7 +72,7 @@ const FeeStructure = ({ feeHeaderHeading }) => {
         </ul>
         <div className="feeFooter">
           <p>Do you want to copy the fee structure </p>
-          <input type="checkbox" name="" id="checkbox" />
+          <input type="checkbox" id="checkbox" />
         </div>
       </div>)
   )
