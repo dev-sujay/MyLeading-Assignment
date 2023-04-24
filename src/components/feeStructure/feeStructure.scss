@@ -1,0 +1,139 @@
+.feeStructure {
+    width: 500px;
+    .feeHeader {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 10px 0;
+        width: 100%;
+        position: relative;
+        margin: 20px 0;
+
+        .heading {
+            font-size: 18px;
+            font-weight: 500;
+            color: #474a5a;
+            margin-right: 10px;
+        }
+
+        .btn {
+            min-width: 70px;
+            width: max-content;
+            padding: 5px 10px;
+            background-color: transparent;
+            border: 1px solid rgb(211, 211, 211);
+            margin: 0 5px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .add-btn {
+            color: #3366ff;
+        }
+
+        .downloadBtn {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            color: #3366ff;
+            font-size: 20px;
+        }
+    }
+
+
+    .feeList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0;
+        width: 100%;
+
+        .feeItemHeader {
+            display: flex;
+            width: 80%;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 11px;
+            font-weight: 500;
+            color: #c7c8ca;
+            margin: 5px;
+        }
+
+        .feeItem {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            border: 1px solid rgb(230, 230, 230);
+            padding: 20px;
+            position: relative;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 90%;
+                height: 100%;
+                font-size: 14px;
+                font-weight: 500;
+                color: rgb(100, 100, 100);
+
+                input{
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid gray;
+                    margin: 0 10px;
+                }
+            }
+
+            .deleteIcon {
+                position: absolute;
+                right: 20px;
+                cursor: pointer;
+            }
+
+        }
+
+
+    }
+
+    .feeFooter {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #474a5a;
+            margin-right: 10px;
+        }
+
+        input {
+            position: relative;
+            margin: 10px 0;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 85%;
+                height: 85%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border: 4px solid #3366ff;
+                border-radius: 50%;
+                background-color: white;
+            }
+
+        &:checked::before{
+            background-color: #3366ff;
+        }
+        }
+    }
+
+}

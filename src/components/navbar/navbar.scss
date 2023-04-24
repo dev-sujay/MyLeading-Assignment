@@ -1,0 +1,32 @@
+.navBar {
+    .navList {
+        list-style: none;
+        display: flex;
+        margin: 10px auto;
+        width: 95vw;
+        justify-content: space-around;
+        height: 45px;
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
+
+        
+
+        .navItem {
+            background-color: #cfdcff;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1px;
+            color: #626f91;
+        }
+
+        .navItem-1{
+            background-color: #3267fd;
+            color: white;
+        }
+        
+
+    }
+}
